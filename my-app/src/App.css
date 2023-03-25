@@ -1,0 +1,200 @@
+/* /*.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #343228;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}*/
+
+/*{
+  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poopins',sans-serif;
+    cursor: pointer;
+  }
+  body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(to right,#fbf83f,#46f0fc)
+  }
+  .app{
+    width: 25rem;
+    height: 28rem;
+    display: flex;
+    text-align:center;
+flex-direction: column;
+background:rgba(255,255,255,0.06);
+box-shadow: 0 8px 32px 0 rgba(31,38,135,.37);
+border-radius: 30px;
+border-left: 1px solid rgba(255,255,255,0.03);
+border-top: 1px solid rgba(255,255,255,.3);
+  }
+h1{
+  font-size: 50px;
+  text-align :center;
+  color:red;
+text-shadow: 2px 2px 4px rgba(0,0,0,.2);
+letter-spacing: 3px;
+margin-bottom: 5%;
+opacity : .7;
+}
+label{
+  font-size:20px;
+  
+  margin-left: 10%;
+  opacity:.8;
+}
+input{
+  width:80%;
+  text-align:center;
+  margin: 5%auto;
+  margin-bottom:8%;
+  font-size: 20px;
+border:none;
+outline:none;
+background:transparent;
+color:white;
+border-bottom:2px solid rgba(255,255,255,0.6);
+opacity: .9;
+}
+
+button{
+  width:50%;
+  margin:3% auto;
+  color: blak;
+  font-size:15px;
+opacity:.9;
+background:rgba(255,255,255,0.06);
+padding:10px 30px;
+border : none;
+outline:none;
+border-radius:20px;
+text-shadow:2px 2px 4px rgba(255,255,255,0.2);
+box-shadow:3px 3px 5px rgba(255,255,255,0.37);
+border-left:1px solid rgba(255,255,255,.3);
+border-top:1px solid rgba(255,255,255,.3);
+}
+a{
+  font-size: 20px;
+  text-align: center;
+  opacity: .7;
+} */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+* {
+     font-family: 'Poppins', sans-serif;
+     font-size: 18px;
+}
+
+body {
+display: flex;
+justify-content: center;
+align-items:center;
+}
+.container{
+  top:50%;
+  left:50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  margin: 0 auto;
+  width:256px;
+  text-align:center;
+  border: 10px solid #101116;
+  background: #101116;
+  border-radius: 5px;
+
+}
+
+.keypad{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  grid-auto-rows: minmax(60px,auto);
+}
+input[type="text"]{
+  height:75px;
+  width:250px;
+  background-color:#10111600 ;
+  border: 0px;
+  color:#ffffff;
+  text-align:right;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing:1px;
+}
+
+#clear{
+  grid-column: 1/3;
+  grid-row: 1;
+  color: #262434;
+}
+
+#result{
+  grid-column: 3/5;
+  grid-row: 5;
+  color: #262834;
+}
+
+#backspace{
+  color: #262834;
+}
+button {
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background:#262834 ;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active{
+  outline:none;
+}
+.highlight{
+  background: #56cbdb;
+}
+
+
+
+
